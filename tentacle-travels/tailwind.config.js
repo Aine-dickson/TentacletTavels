@@ -3,11 +3,14 @@ module.exports = {
   darkMode: 'class',
   content: [
     "./html",
+    "./node_modules/flowbite/**/*.js",
     "./src/**/*.{vue, js, jsx, ts, tsx}"
   ],
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('flowbite/plugin')
+  ],
 }
 
